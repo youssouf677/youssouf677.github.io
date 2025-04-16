@@ -1,0 +1,120 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.9;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: black;  
+}
+.main {
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    margin: 20px auto;
+
+}
+.gauche {
+    width: 25%;
+    background-color:rgb(56, 52, 52);
+    padding-left:60px;
+    padding-top: 20px;
+    color: white;
+    font-size:medium;
+    
+}
+.gauche h3{
+    color: white;
+}
+.gauche p{
+    line-height: 0.8;
+}
+.droite {
+    width: 75%;
+    padding: 40px;
+    background-color: white;
+   margin:auto
+    
+}
+.droite h2,h3{
+    color: rgb(34, 161, 204);
+    
+}
+.droite p{
+    line-height: 0.8;
+}
+.contact-info{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.contact-info p{
+    line-height: 0.8;
+    
+
+}
+.adres a{
+    text-decoration: none;
+   color: white;
+}
+.adres a:hover{
+    transition: all 0.3s;
+    color: blue;
+}
+.sect{
+   
+    padding-top:30% ;
+}
+.bleu{
+    font-size: x-large;
+    color: rgb(34, 161, 204);
+    padding-bottom: 50px;
+}
+.ita{
+    font-style: italic;
+}
+.place{
+    color: rgb(34, 161, 204);
+}
+.section{
+    padding-bottom: 20px;
+}
+nav ul li p{
+    line-height: 0.8;
+}
+.ligne{
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+.ligne::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: 3px;
+    height: 100%;
+    background:black;
+}
+.ligne li{
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+.ligne li::before{
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    width: 3px;
+    height: 2px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: black;
+}
+@media all and (max-width:1000px){
+ body{   font-size: 10px;
+    background-color: grey;
+ }
+ .gauche{width: 20%;}
+ .droite{width: 80%;}
+}
